@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios y Botones</title>
+  <script src="js/botones.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/botones.css">
+</head>
+<body>
+
+<button onclick="showForm('person')">Formulario de Alumno</button>
+<button onclick="showForm('nota')">Formulario de Notas</button>
+<button onclick="showForm('materia')">Formulario de Materias</button>
+
+<div id="form-person" class="form-container">
+  <form>
+    <h2>Formulario de Alumno</h2>
+    <input type="text" placeholder="Nombre">
+    <input type="text" placeholder="Dirección">
+    <input type="tel" placeholder="Teléfono">
+    <input type="submit" value="Enviar ">
+  </form>
+</div>
+
+<div id="form-nota" class="form-container">
+  <form>
+    <h2>Formulario de Notas</h2>
+    <input type="text" placeholder="Alumno">
+    <input type="text" placeholder="Materia">
+    <input type="number" placeholder="Nota">
+    <input type="submit" value="Registrar Nota">
+  </form>
+</div>
+
+<div id="form-materia" class="form-container">
+  <form>
+    <h2>Formulario de Materias</h2>
+    <input type="number" placeholder="ID de Materia">
+    <input type="text" placeholder="Nombre de Materia">
+    <input type="number" placeholder="Semestre">
+    <input type="submit" value="Registrar Materia">
+  </form>
+</div>
+</body>
+</html>
